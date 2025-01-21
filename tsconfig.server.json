@@ -1,0 +1,14 @@
+{
+    "extends":"./tsconfig.json",
+    "compilerOptions": {
+        "module": "CommonJS",
+        "outDir": "dist",
+        "lib": ["es2019"],
+        "moduleResolution": "node",
+        "target": "es2019",
+        "isolatedModules": false,
+        "noEmit": false,
+        "strict":true
+    },
+    "include": ["server.mts"] 
+}
