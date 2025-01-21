@@ -8,8 +8,8 @@ const Form = ({ onSendMessage }: { onSendMessage: (message: string) => void }) =
         e.preventDefault();
         if (message.trim() !== "") {
             onSendMessage(message);
-            setMessage("");
         }
+        setMessage("");
     }
 
     return (
