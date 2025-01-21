@@ -17,6 +17,7 @@ const Form = ({ onSendMessage }: { onSendMessage: (message: string) => void }) =
             <form onSubmit={handelSubmit} >
                 <div className='w-full'>
                     <input
+                        value={message}
                         type="text"
                         onChange={(e) => setMessage(e.target.value)}
                         className='px-3 py-2 w-[90%] rounded outline-1 focus:outline-red-400 outline' placeholder='Enter your message here' />
